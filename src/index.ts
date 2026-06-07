@@ -7,10 +7,14 @@ import { companyTools } from "./tools/companies.js";
 import { pipelineTools } from "./tools/pipelines.js";
 import { taskTools } from "./tools/tasks.js";
 import { eventTools } from "./tools/events.js";
+import { talkTools } from "./tools/talks.js";
+import { salsbotTools } from "./tools/salesbots.js";
+import { templateTools } from "./tools/templates.js";
+import { customFieldTools } from "./tools/custom-fields.js";
 
 const server = new McpServer({
   name: "kommo-mcp",
-  version: "1.0.0",
+  version: "1.1.0",
 });
 
 const allTools: Record<string, { description: string; schema: any; handler: (params: any) => Promise<any> }> = {
@@ -21,6 +25,10 @@ const allTools: Record<string, { description: string; schema: any; handler: (par
   ...pipelineTools,
   ...taskTools,
   ...eventTools,
+  ...talkTools,
+  ...salsbotTools,
+  ...templateTools,
+  ...customFieldTools,
 };
 
 for (const [name, tool] of Object.entries(allTools)) {

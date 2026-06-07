@@ -13,9 +13,13 @@ Ideal para agencias, partners y consultores que manejan varias cuentas de client
 - **Pipelines**: Ver embudos de venta y resumen por etapa
 - **Tareas**: Ver pendientes, crear y completar tareas
 - **Eventos**: Actividad reciente de cada cuenta
+- **Conversaciones**: Ver chats activos, no leídos y por contacto
+- **Salesbots**: Listar, lanzar y detener bots de ventas
+- **Plantillas**: Crear, editar y eliminar plantillas de mensajes
+- **Campos custom**: Ver campos personalizados, tags, fuentes y razones de pérdida
 - **Dashboard**: Resumen rápido de todas las cuentas con un solo comando
 
-## 20 herramientas disponibles
+## 34 herramientas disponibles
 
 | Categoría | Herramientas |
 |---|---|
@@ -26,6 +30,10 @@ Ideal para agencias, partners y consultores que manejan varias cuentas de client
 | Pipelines | `get_pipelines`, `get_pipeline`, `get_pipeline_leads_summary` |
 | Tareas | `get_tasks`, `get_task`, `create_task`, `update_task` |
 | Eventos | `get_events`, `get_users` |
+| Conversaciones | `get_talks`, `get_talk_by_contact`, `get_unread_talks` |
+| Salesbots | `get_salesbots`, `get_salesbot`, `launch_salesbot`, `stop_salesbot` |
+| Plantillas | `get_templates`, `get_template`, `create_templates`, `update_templates`, `delete_template` |
+| Campos/Config | `get_custom_fields`, `get_sources`, `get_tags`, `get_loss_reasons`, `get_webhooks` |
 
 ## Instalación
 
